@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Hello",
+    "version": "0.1",
+    "description": "A hello world extenstion",
+    "icons": {
+        "128": "images/icons/icon128.png",
+        "48": "images/icons/icon48.png",
+        "16": "images/icons/icon16.png"
+    },
+    "browser_action": {
+        "default": "icon16.ng",
+        "default_popup": "popup.html"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "geolocation",
+        "alarms",
+        "<all_urls>"
+      ],
+      "background": {
+        "scripts": ["scripts/background.js"],
+        "persistent": false
+      }
+    
+
+}

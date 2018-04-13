@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .row {
+    /* border: 1px dotted grey; */
+}
+
+.box .row.header {
+    align-self: flex-end;
+    flex: 0 1 auto;
+    height: 10%;
+}
+
+.box .row.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    flex: 1 1 auto;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.box .row.footer {
+    flex: 0 1 40px;
+    height: 10%;
+}
+
+.citystate {
+    font-family: 'Helvetica';
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.tempicon{
+    padding: 3%;
+}
+
+.temperature .tempnum {
+    opacity: 1;
+    /* margin: 0% 1% 0% 0%; */
+    font-family: 'Helvetica Neue';
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.temp-column {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 1%; */
+    /* justify-content: space-around; */
+}
+
+.clock {
+    font-family: 'Helvetica Neue', serif;
+    font-size: 13vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-weight: 500;
+    /* text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.75); */
+}
+
+.temperature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
